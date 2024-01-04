@@ -11,6 +11,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 /* NOTA 1: 
@@ -36,13 +37,12 @@ header {
 
 header h1 {
     font-family: var(--fuente-destacada);
-    font-size: 4rem;
+    font-size: 10vw;
     font-variant: small-caps;
 }
 
 header p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
 }
 
 a {
@@ -75,6 +75,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3vw;
 }
 
 /* ESTO ES LO QUE YO HABIA HECHO ANTES: 
@@ -88,10 +89,10 @@ section {
 
 /* ---------- FIN DE LA NOTA ------------- */
 
-
-
 section.con_fondo-uno {
     position: relative;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     height: 30vh;
     background-image: url(imagens/background001.jpg);
     background-size: cover;
@@ -100,6 +101,8 @@ section.con_fondo-uno {
 
 section.con_fondo-dos {
     position: relative;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     height: 30vh;
     background-image: url(imagens/background002.jpg);
     background-size: cover;
@@ -114,6 +117,10 @@ section p.fondo_negro_difuminado {
     padding: 10px 10px 10px 3px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+section p.parrafo_normal {
+    margin-bottom: 10vh;
 }
 
 footer {
