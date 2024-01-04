@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+
+:root {
+    --color0: #000000;
+    --color1: #FFFFFF;
+
+    --fuente-predeterminada: 'Sriracha', Arial, Verdana, Helvetica, Sans-serif;
+    --fuente-destacada: 'Passion One', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* NOTA 1: 
+AQUI ESTAMOS ANADIENDO: 
+1. LA ETIQUETA html
+2. PROPIEDAD min-height: 100vh DE ESTA FORMA LE ESTAMOS ORDENANDO QUE EL TAMANO MINIMO DE NUESTRA PANALLA SERA SIEMPRE EL 100 % DE VIEWPORT */
+
+html body {
+    min-height: 100vh;
+    background-color: var(--color1);
+    font-family: var(--fuente-predeterminada);
+}
+
+/*---------FIN NOTA 1 --------------  */
+
+header {
+    background-color: var(--color0);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header h1 {
+    font-family: var(--fuente-destacada);
+    font-size: 4rem;
+    font-variant: small-caps;
+}
+
+header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* NOTA:
+    1.  NO ERA NECESARIO HACER ESTO, ES DECIR, GENERE EL MISMO EFECTO VISUAL, PERO NO ES LA FORMA CORRECTA:
+        main {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    } 
+
+    2. SE LE ANADIO UN PADDING TOP Y BOTTOM DE 10VH ES DECIR, 10% DE LA ALTURA DEL VIEWPORT A CADA SECTION. (TAL COMO SE APRECIA ABAJO)
+
+    NOTA: AL TRABAJAR CON VH COMO UNIDAD, ESTA SE ADAPTA AL TAMANO DE LA PANTALLA
+
+    3. EN ESA MISMA ETIQUETA SECTION PODEMOS MODIFICAR COMO SE MUESTRA EL CONTENIDO DE TEXTO DENTRO DE ELLA, ES POR ELLO QUE ANADIMOS TAMBIEN EN ESTE MISMO BLOQUE DE CODIGO CSS LAS PROPIEDAS line-height Y padding-left 
+
+    */
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+/* ESTO ES LO QUE YO HABIA HECHO ANTES: 
+    section p {
+        max-width: 60%;
+        margin: 0 0 80px 30px;
+        font-size: 2em;
+        padding: 0 0 10px 5px;
+    }
+*/
+
+/* ---------- FIN DE LA NOTA ------------- */
+
+
+
+section.con_fondo-uno {
+    position: relative;
+    height: 30vh;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.con_fondo-dos {
+    position: relative;
+    height: 30vh;
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section p.fondo_negro_difuminado {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.452);
+    color: var(--color1);
+    padding: 10px 10px 10px 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer {
+    background-color: var(--color0);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
